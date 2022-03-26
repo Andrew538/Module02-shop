@@ -67,8 +67,8 @@ body {
        font-size: .8rem;
         color: $white;
         position: absolute;
-        right: 1rem;
-        top: .6rem;
+        right: 0.65rem;
+        top: 0.45rem;
     }
 }
 .logo {
@@ -97,6 +97,28 @@ body {
     &__link {
         margin-top: 6rem;
     }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+    &__cover {
+        flex-basis: 763px;;
+    }
+    &__line {
+        width: 658px;
+        height: 658px;
+        box-shadow: 0 0 0 1px $green;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__image {
+        width: 90%;
+    }
 }
 .title {
     font-family: $font-cormorant;
@@ -120,7 +142,7 @@ body {
 }
 .link {
     color:$white;
-    text-transform: lowercase;
+    text-transform: uppercase;
     padding: 2.5rem 4.2rem;
     background-color: $orange;
     box-shadow: 0px 1rem 1.1rem .2rem rgba(207, 92, 13, 0.2);
