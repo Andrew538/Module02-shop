@@ -18,7 +18,7 @@ body {
 }
 .header {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0 auto 5.2rem;
     padding: 4rem 15px 0 15px;
     display: flex;
     justify-content: space-between;
@@ -48,8 +48,8 @@ body {
     }
     &__cart {
         display: block;
-        width: 3.8rem;
-        height: 3.8rem;
+        width: 4rem;
+        height: 4rem;
         border-radius: 50%;
         background-color: $orange;
         background-image: url(../images/cart.svg);
@@ -75,8 +75,8 @@ body {
     display: block;
     background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 12.3rem;
+    background-size: contain;
+    width: 12rem;
     height: 3.2rem;
 }
 .container {
@@ -89,6 +89,9 @@ body {
     background-image: url(../images/main.png);
     background-size: cover;
     background-position-x: center;
+    position: relative;
+    padding-bottom: 180px;
+    z-index: 0;
     &__item {
         margin-left: 12rem;
         max-width: 378px;
@@ -104,12 +107,20 @@ body {
         gap: 30px;
     }
     &__cover {
-        flex-basis: 763px;;
+        flex-basis: 758px;
+        height: 758px;
+        border: 1px solid rgba($green, .4);
+        border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
     &__line {
-        width: 658px;
-        height: 658px;
-        box-shadow: 0 0 0 1px $green;
+        width: 656px;
+        height: 656px;
+        border: 1px solid rgba($green, .4);
         border-radius: 100%;
         display: flex;
         flex-direction: column;
@@ -117,13 +128,114 @@ body {
         align-items: center;
     }
     &__image {
-        width: 90%;
+        width: 92%;
+        box-shadow: 20px 20px 33px 0px rgba($green , 50%);
+        border-radius: 100%;
+    }
+    &__text {
+        padding-top: 5rem;
+    }
+    &__btn {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        position: absolute;
+        color: $green;
+        text-align: left;
+        z-index: 100;
+        &:hover {
+            
+                &::before {
+                    background-color: $orange;
+                    box-shadow: 0 0 0 4px $white, 0 0 0 5px $orange;
+                    transition: all .4 ease;
+
+                }
+            
+        }
+        &::before {
+            content: '';
+            background-color: $green;
+            width: 11px;
+            height: 11px;
+            box-shadow: 0 0 0 4px $white, 0 0 0 5px $green;
+            border-radius: 100%;
+            position: absolute;
+            transition: all .9 ease;
+
+
+        }
+        &_1 {
+            top: 46px;
+            left: 67px;
+            &::before {
+                top: 20px;
+                left: 83px;
+            }
+        }
+        &_2 {
+            top: 191px;
+            right: -5px;
+            &::before {
+                top: 17px;
+                right: 93px;;
+            }
+           
+
+        }
+        &_3 {
+            bottom: -46px;
+            right: 248px;
+            &::before {
+                bottom: 53px;
+                right: 29px;
+            }
+        }
+    }
+    &__food {
+        display: block;
+        color: rgba($green, .8)
+    }
+    &__tomato {
+        position: absolute;
+        bottom: 113px;
+        right: 114px;
+        width: 11rem;
+        z-index: -1;
+    }
+    &__cucumber {
+        position: absolute;
+        top: -49px;
+        left: 728px;
+        width: 8.5rem;
+        z-index: -1;
+    }
+    &__pepper {
+        position: absolute;
+        left: 39px;
+        top: 38%;
+        width: 8.6rem;
+        z-index: -1;
+    }
+    &__beans {
+        position: absolute;
+        width: 10.5rem;
+        bottom: 153px;
+        z-index: -1;
+    }
+    &__avocado {
+        position: absolute;
+        top: 45px;
+        right: -12px;
+        z-index: -1;
+
     }
 }
 .title {
     font-family: $font-cormorant;
     font-weight: 700;
     font-size: 8rem;
+    line-height: 8rem;
     margin: 0;
     &__span {
         font-style: italic;
@@ -136,6 +248,7 @@ body {
 }
 .description {
     margin: 0;
+    line-height: 2.6rem;
     &_size-s {
         font-size: 1.8rem;
     }
@@ -143,7 +256,8 @@ body {
 .link {
     color:$white;
     text-transform: uppercase;
-    padding: 2.5rem 4.2rem;
+    letter-spacing: 0.13rem;
+    padding: 2.4rem 4.3rem;
     background-color: $orange;
     box-shadow: 0px 1rem 1.1rem .2rem rgba(207, 92, 13, 0.2);
     text-decoration: none;   
