@@ -119,7 +119,6 @@ import Swiper, { Navigation, Pagination } from 'swiper';
     btn.addEventListener('click', function() {
         let item=document.getElementsByClassName('catalog-grid__item');
         countD += 4;
-        console.log('btn')
         if (countD <= item.length){
             for(let i=0;i<countD;i++){
                 item[i].style.display = "block";
