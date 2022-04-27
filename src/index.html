@@ -252,24 +252,24 @@
             </div>
             <ul class="category catalog__list">
                 <li class="category__item">
-                    <a class="category__link" href="#">Молочные продукты</a>
+                    <button class="category__link milk" data-filter="milk" href="#">Молочные продукты</button>
                 </li>
                 <li class="category__item">
-                    <a class="category__link" href="#">Бакалея</a>
+                    <button class="category__link grocery" data-filter="grocery" href="#">Бакалея</button>
                 </li>
                 <li class="category__item">
-                    <a class="category__link" href="#">Мясо, птица</a>
+                    <button class="category__link meat" data-filter="meat" href="#">Мясо, птица</button>
                 </li>
                 <li class="category__item">
-                    <a class="category__link" href="#">Детям</a>
+                    <button class="category__link children" data-filter="children" href="#">Детям</button>
                 </li>
                 <li class="category__item">
-                    <a class="category__link" href="#">Овощи и фрукты</a>
+                    <button class="category__link vegetables" data-filter="vegetables" href="#">Овощи и фрукты</button>
                 </li>
             </ul>
         
         <div class="catalog-grid">
-            <div class="catalog-grid__item">
+            <div class="catalog-grid__item milk" data-type="milk">
                 <div class="catalog-grid__cover">
                     <img class="catalog-grid__image" src="./images/catalog/milk.png" alt="Молоко топленое">
                 </div>
@@ -288,7 +288,7 @@
                    <a href="#" class="link link_min">В корзину</a>
                </div>
             </div>
-            <div class="catalog-grid__item">
+            <div class="catalog-grid__item meat" data-type="milk">
                 <div class="catalog-grid__cover">
                     <img class="catalog-grid__image" src="./images/catalog/Слой 1.png" alt="Йогурт с черникой">
                 </div>
@@ -306,7 +306,7 @@
                    <a href="#" class="link link_min">В корзину</a>
                </div>
             </div>
-            <div class="catalog-grid__item">
+            <div class="catalog-grid__item children" data-type="milk">
                 <div class="catalog-grid__cover">
                     <img class="catalog-grid__image" src="./images/catalog/curg.png" alt="Творог">
                 </div>
@@ -325,7 +325,7 @@
                    <a href="#" class="link link_min">В корзину</a>
                </div>
             </div>
-            <div class="catalog-grid__item">
+            <div class="catalog-grid__item children" data-type="milk">
                 <div class="catalog-grid__cover">
                     <img class="catalog-grid__image" src="./images/catalog/mozarella.png" alt="Моцарелла">
                 </div>
@@ -343,7 +343,7 @@
                    <a href="#" class="link link_min">В корзину</a>
                </div>
             </div>
-            <div class="catalog-grid__item">
+            <div class="catalog-grid__item milk" data-type="milk">
                 <div class="catalog-grid__cover">
                     <img class="catalog-grid__image" src="./images/catalog/butter.png" alt="Масло сливочное">
                 </div>
@@ -362,7 +362,7 @@
                    <a href="#" class="link link_min">В корзину</a>
                </div>
             </div>
-            <div class="catalog-grid__item">
+            <div class="catalog-grid__item milk">
                 <div class="catalog-grid__cover">
                     <img class="catalog-grid__image" src="./images/catalog/thermostatic_yogurt.png" alt="Йогурт термостатный">
                 </div>
@@ -381,7 +381,7 @@
                    <a href="#" class="link link_min">В корзину</a>
                </div>
             </div>
-            <div class="catalog-grid__item">
+            <div class="catalog-grid__item milk">
                 <div class="catalog-grid__cover">
                     <img class="catalog-grid__image" src="./images/catalog/cheese.png" alt="сыр">
                 </div>
@@ -400,7 +400,7 @@
                    <a href="#" class="link link_min">В корзину</a>
                </div>
             </div>
-            <div class="catalog-grid__item">
+            <div class="catalog-grid__item grocery" data-type="grocery">
                 <div class="catalog-grid__cover">
                     <img class="catalog-grid__image" src="./images/catalog/salad_dressing.png" alt="Соус для салата">
                 </div>
@@ -421,7 +421,7 @@
             </div>
 
             <!-- Скрытые карточки -->
-            <div class="catalog-grid__item">
+            <div class="catalog-grid__item milk">
                 <div class="catalog-grid__cover">
                     <img class="catalog-grid__image" src="./images/catalog/milk.png" alt="Молоко топленое">
                 </div>
@@ -440,7 +440,7 @@
                    <a href="#" class="link link_min">В корзину</a>
                </div>
             </div>
-            <div class="catalog-grid__item">
+            <div class="catalog-grid__item meat">
                 <div class="catalog-grid__cover">
                     <img class="catalog-grid__image" src="./images/catalog/Слой 1.png" alt="Йогурт с черникой">
                 </div>
@@ -458,7 +458,7 @@
                    <a href="#" class="link link_min">В корзину</a>
                </div>
             </div>
-            <div class="catalog-grid__item">
+            <div class="catalog-grid__item children">
                 <div class="catalog-grid__cover">
                     <img class="catalog-grid__image" src="./images/catalog/curg.png" alt="Творог">
                 </div>
@@ -477,7 +477,7 @@
                    <a href="#" class="link link_min">В корзину</a>
                </div>
             </div>
-            <div class="catalog-grid__item">
+            <div class="catalog-grid__item children">
                 <div class="catalog-grid__cover">
                     <img class="catalog-grid__image" src="./images/catalog/mozarella.png" alt="Моцарелла">
                 </div>
@@ -631,11 +631,11 @@
                 </div>
             </div>
         </secton>
-        <footer>
+        <footer class="site-footer">
             <div class="container">
                 <div class="footer__box">
-                    <a href="#" class="logo"></a>
-                    <ul class="footer__list">
+                    <a href="#" class="logo site-footer__logo"></a>
+                    <ul class="footer__list footer__list-nav">
                         <li class="footer__item"><a class="footer__link" href="">Наша продукция</a></li>
                         <li class="footer__item"><a class="footer__link" href="">Новинки</a></li>
                         <li class="footer__item"><a class="footer__link" href="">Доставка</a></li>
@@ -647,8 +647,23 @@
                     </ul>
                     <div class="footer__contact">
                         <a class="footer__tel" href="tel:+79453425555">+7 945 342 55 55</a>
-                        ><a class="footer__mail" href="mailto:healthlyfood@mail.ru">healthlyfood@mail.ru</a>
+                        <a class="footer__mail" href="mailto:healthlyfood@mail.ru">e-mail: healthlyfood@mail.ru</a>
+                        <ul class="footer-social">
+                            <li class="footer-social__item">
+                                <a class="footer-social__link footer-social__vk" href="№" target="'_blank"></a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a class="footer-social__link footer-social__inst" href="№" target="'_blank"></a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a class="footer-social__link footer-social__fb" href="№" target="'_blank"></a>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+                <div class="footer__text">
+                    <p class="footer__copy">&copy; 2020, Все права защищены</p>
+                    <p class="footer__author">Сделано в рамках курса учебной платформы <a class="footer__author-link" href="https://learn.javascript.ru/introduction-browser-events">Frontend Blok</a></p>
                 </div>
             </div>
         </footer>

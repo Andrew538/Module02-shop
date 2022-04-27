@@ -127,3 +127,56 @@ import Swiper, { Navigation, Pagination } from 'swiper';
   
     })
   }
+
+
+
+
+let authorHover = document.querySelector('.footer__author');
+let autorLink = document.querySelector('.footer__author-link');
+
+
+authorHover.addEventListener('mouseenter', function() {
+  autorLink.style.color = "#27300f"
+})
+
+authorHover.addEventListener('mouseleave', function() {
+  autorLink.style.color = "rgba(39, 48, 15, .6)"
+})
+
+function app() {
+  let buttons = document.querySelectorAll('.category__link')
+  let cards = document.querySelectorAll('.catalog-grid__item ')
+
+  function filter (category, items) {
+    items.forEach((item) => {
+      const isItemFiltered = !item.classList.contains(category)
+      if (isItemFiltered  ) {
+        item.classList.add('hide')
+      } else {
+        item.classList.remove('hide')
+      } 
+    })
+
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const currentCategory = button.dataset.filter;
+      filter(currentCategory, cards)
+      
+    })
+  })
+
+  // cards.forEach((part) => {
+  //   part.ontransitionend = function () {
+  //     // console.log('dfjkg')
+
+  //     if (part.classList.contains('anime')) {
+  //       part.classList.add('hide')
+  //     }
+  //   }
+  // })
+
+}
+
+app()
