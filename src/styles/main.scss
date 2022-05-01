@@ -16,6 +16,10 @@ body {
     font-size: 1.6rem;
     font-family: $font-jost;
     color: $green;
+    background-image: url(../images/background__sites.png);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
 }
 .header {
     max-width: 1440px;
@@ -93,6 +97,11 @@ body {
     height: 3.2rem;
     cursor: pointer;
     transition: all .3s ease;
+    &_footer {
+        flex-basis: 18rem;
+        height: 4.8rem;
+        margin-top: .8rem;
+    }
     &:hover {
         transform: scale(1.2);
         -webkit-transform: scale(1.2);
@@ -106,10 +115,10 @@ body {
     padding-right: 15px;
 }
 .main {
-    background-image: url(../images/main.png);
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
+    // background-image: url(../images/main.png);
+    // background-size: cover;
+    // background-position-x: center;
+    // background-repeat: no-repeat;
     position: relative;
     padding-bottom: 180px;
     z-index: 0;
@@ -320,10 +329,10 @@ body {
 }
 
 .offer {
-    background-image: url(../images/offer.png);
-    background-size: cover;
-    background-position-x: center;
-    background-repeat: no-repeat;
+    // background-image: url(../images/offer.png);
+    // background-size: cover;
+    // background-position-x: center;
+    // background-repeat: no-repeat;
     padding-top: 2rem;
     padding-bottom: 12.8rem;
     &__text {
@@ -956,15 +965,17 @@ body {
             justify-content: space-between;
             padding-bottom: 2.3rem;
         }
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            flex-basis: 66.5%;
+        }
 		// .footer__list
 		&__list {
             margin: 0;
             padding-left: 0;
             list-style-type: none;
             font-size: 1.8rem;
-        }
-        &__list-nav {
-            padding-left: 12.6rem;
         }
 		// .footer__item
 		&__item {
