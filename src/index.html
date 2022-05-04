@@ -34,9 +34,16 @@
                 </ul>
             </nav>
             <a href="tel:+79453425555" class="header__tel">+7 945 342 55 55</a>
-            <button href="" class="header__cart">
+            <div class="header__buttons">
+                <a href="tel:+79453425555" class="header__phone"></a>
+                <button href="" class="header__menu"></button>
+                <button href="" class="header__cart">
+                    <span class="header__counter">0</span>
+                </button>
+            </div>
+            <!-- <button href="" class="header__cart">
                 <span class="header__counter">0</span>
-            </button>
+            </button> -->
         </header>
         <div class="container">
             <div class="main__flex">
@@ -46,6 +53,7 @@
                     </h1>
                     <div class="main__item">
                         <p class="description description_size-s">Сеть магазинов полезных продуктов питания,  производство которых основано на&nbsp;принципах и стандартах органического чистых продуктов</p>
+                        <img class="main__image-mobi" src="./images/plate2.png" alt="Тарелка">
                         <div class="main__link">
                             <a href="#" class="link">Перейти в каталог</a>
                         </div>
@@ -159,16 +167,16 @@
                           <div class="swiper-slide__cover">
                               <img class="swiper-slide__image" src="./images/catalog/milk.png" alt="">
                           </div>
-                          <h3 class="swiper-slide__title">
+                          <h3 class="swiper-slide__title swiper-slide__title_size-m">
                             Молоко топленое
                           </h3>
                          <p class="swiper-slide__deskription">Молоко Healthy food топленеое мдж 4%	500гр</p>
                          <p class="swiper-slide__price">159 руб/шт</p>
                          <div class="swiper-slide__footer">
-                             <div class="counter" data-counter>
-                                 <button class="counter__btn counter__btn_minus"></button>
+                             <div class="counter counter_disabled" data-counter>
+                                 <button class="counter__btn counter__btn_minus counter__btn_size-m"></button>
                                  <input class="counter__input" type="text" disabled value="0">
-                                 <button class="counter__btn counter__btn_plus"></button>
+                                 <button class="counter__btn counter__btn_plus counter__btn_size-m"></button>
                              </div>
                              <a href="#" class="link link_max">В корзину</a>
                          </div>
@@ -177,16 +185,16 @@
                         <div class="swiper-slide__cover">
                             <img class="swiper-slide__image" src="./images/egg.png" alt="Перепелиные яйца">
                         </div>
-                        <h3 class="swiper-slide__title">
+                        <h3 class="swiper-slide__title swiper-slide__title_size-m">
                             Яйцо перепелиное
                         </h3>
                        <p class="swiper-slide__deskription">QEGG Яйцо перепелиное 20шт</p>
                        <p class="swiper-slide__price">94 руб/упак</p>
                        <div class="swiper-slide__footer">
-                           <div class="counter" data-counter>
-                               <button class="counter__btn counter__btn_minus"></button>
+                           <div class="counter counter_disabled" data-counter>
+                               <button class="counter__btn counter__btn_minus counter__btn_size-m"></button>
                                <input class="counter__input" type="text" disabled value="0">
-                               <button class="counter__btn counter__btn_plus"></button>
+                               <button class="counter__btn counter__btn_plus counter__btn_size-m"></button>
                            </div>
                            <a href="#" class="link link_max">В корзину</a>
                        </div>
@@ -195,16 +203,16 @@
                         <div class="swiper-slide__cover">
                             <img class="swiper-slide__image" src="./images/chicken_.png" alt="Перепелиные яйца">
                         </div>
-                        <h3 class="swiper-slide__title">
+                        <h3 class="swiper-slide__title swiper-slide__title_size-m">
                             Куриное филе Оссобуко
                         </h3>
                         <p class="swiper-slide__deskription">Куриное филе Оссобуко (Ангус) охл скин. В вакумной уапаковке</p>
                         <p class="swiper-slide__price">159 руб/шт</p>
                         <div class="swiper-slide__footer">
-                           <div class="counter" data-counter>
-                               <button type="button" class="counter__btn counter__btn_minus"></button>
+                           <div class="counter counter_disabled" data-counter>
+                               <button type="button" class="counter__btn counter__btn_minus counter__btn_size-m"></button>
                                <input class="counter__input" type="text" disabled value="0">
-                               <button type="button" class="counter__btn counter__btn_plus"></button>
+                               <button type="button" class="counter__btn counter__btn_plus counter__btn_size-m"></button>
                            </div>
                            <a href="#" class="link link_max">В корзину</a>
                        </div>
@@ -647,8 +655,10 @@
                             <li class="footer__item">сб-вс с&nbsp;09:00 до&nbsp;19:00</li>
                         </ul>
                         <div class="footer__contact">
-                            <a class="footer__tel" href="tel:+79453425555">+7 945 342 55 55</a>
-                            <a class="footer__mail" href="mailto:healthlyfood@mail.ru">e-mail: healthlyfood@mail.ru</a>
+                            <div class="footer__contact-box">
+                                <a class="footer__tel" href="tel:+79453425555">+7 945 342 55 55</a>
+                                <a class="footer__mail" href="mailto:healthlyfood@mail.ru">e-mail: healthlyfood@mail.ru</a>
+                            </div>
                             <ul class="footer-social">
                                 <li class="footer-social__item">
                                     <a class="footer-social__link footer-social__vk" href="№" target="'_blank"></a>
