@@ -258,8 +258,24 @@
                 <p class="description description_size-m">Еда которая заботиться о вашей фигуре
                 </p>
             </div>
-            <ul class="category catalog__list">
-                <li class="category__item">
+            <div class="slider slider__catalog">
+                <div class="swiper catalogSwiper">
+                    <div class="swiper-wrapper">
+                        <button class="swiper-slide swiper-slide__button category__link milk" data-filter="milk">Молочные продукты</button>
+                                       
+                        <button class="swiper-slide swiper-slide__button category__link grocery" data-filter="grocery">Бакалея</button>
+
+                        <button class="swiper-slide swiper-slide__button category__link meat" data-filter="meat">Мясо, птица</button>
+                                                    
+                        <button class="swiper-slide swiper-slide__button category__link children" data-filter="children">Детям</button>
+                                                      
+                        <button class="swiper-slide swiper-slide__button category__link vegetables" data-filter="vegetables">Овощи и фрукты</button>
+                                     
+                    </div>
+                </div>
+            </div>
+            <!-- <ul class="category catalog__list">
+                <li class="category__item swiper-slide">
                     <button class="category__link milk" data-filter="milk" href="#">Молочные продукты</button>
                 </li>
                 <li class="category__item">
@@ -274,7 +290,7 @@
                 <li class="category__item">
                     <button class="category__link vegetables" data-filter="vegetables" href="#">Овощи и фрукты</button>
                 </li>
-            </ul>
+            </ul> -->
         
         <div class="catalog-grid">
             <div class="catalog-grid__item milk" data-type="milk">
@@ -495,7 +511,7 @@
                 <p class="catalog-grid__deskription">Моцарелла Healthy food  45%, 0.125 кг</p>
                 <p class="catalog-grid__price">359 руб/шт</p>
                 <div class="catalog-grid__footer">
-                   <div class="counter" data-counter>
+                   <div class="counter counter_disabled" data-counter>
                        <button type="button" class="counter__btn counter__btn_min counter__btn_minus"></button>
                        <input class="counter__input counter__input_min" type="text" disabled value="0">
                        <button type="button" class="counter__btn counter__btn_min counter__btn_plus"></button>

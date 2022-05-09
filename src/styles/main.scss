@@ -55,6 +55,9 @@ body {
     @media (max-width: $r_desk_1280) {
         gap: 3%;    
     }
+    @media (max-width: $r_mob_360) {
+        margin: 0 auto 4.5rem; 
+    }
     &__navigation {
         flex-grow: 1;
         margin-left: 4.5rem;
@@ -66,8 +69,8 @@ body {
         }
         @media (max-width: $r_tab_900) {
             display: none;
-
         }
+       
     }
     &__nav {
         display: flex;
@@ -227,7 +230,12 @@ body {
         @media (max-width: $r_tab) {
             width: 260px;
             margin: auto;
-            flex-basis: 11rem;
+           flex-basis: 11rem;
+        }
+        @media (max-width: $r_mob_360) {
+            width: 121px;
+            flex-basis: 6rem;
+
         }
 
     }
@@ -286,6 +294,9 @@ body {
         @media (max-width: $r_tab) {
             text-align: center;
         }
+        @media (max-width: $r_mob_360) {
+            margin-top: 3rem;
+        }
     }
     &__flex {
         display: flex;
@@ -295,6 +306,11 @@ body {
         @media (max-width: $r_desk_1120) {
             padding-top: 3rem;
             padding-bottom: 9rem;
+        }
+        @media (max-width: $r_mob_360) {
+            padding-top: 0;
+            padding-bottom: 3rem;
+            
         }
     }
     &__cover {
@@ -361,8 +377,11 @@ body {
             animation: shadow 5s infinite;
         }
         @media (max-width: $r_mob_500) {
-            max-width: 220px;
-            
+            max-width: 220px;            
+        }
+        @media (max-width: $r_mob_360) {
+            margin-top: 5rem;
+
         }
     }
     @keyframes shadow {
@@ -491,6 +510,11 @@ body {
             width: 7rem;
             left: -16px;
         }
+        @media (max-width: $r_mob_360) {
+            top: 83px;
+            left: -11px;
+            
+        }
     }
     &__cucumber {
         position: absolute;
@@ -507,7 +531,10 @@ body {
             bottom: 249px;
             right: -20px;
             width: 5rem;
-            
+        }
+        @media (max-width: $r_mob_360) {
+            bottom: 171px;
+
         }
     }
     &__pepper {
@@ -524,6 +551,11 @@ body {
             left: 22px;
             top: 41%;
             width: 4rem;
+        }
+        @media (max-width: $r_mob_360) {
+            left: -2px;
+            top: 37%;
+            
         }
     }
     &__beans {
@@ -577,6 +609,10 @@ body {
     @media (max-width: $r_tab) {
         text-align: center;
     }
+    @media (max-width: $r_mob_360) {
+        font-size: 3.8rem;
+        line-height: 4rem;
+    }
 }
 .description {
     margin: 0;
@@ -589,11 +625,17 @@ body {
         @media (max-width: $r_desk_1280) {
             font-size: 1.6rem;
         }
+        @media (max-width: $r_mob_360) {
+            margin-top: 14px;
+        }
     }
     &_size-m {
         font-size: 2.4rem;
         @media (max-width: $r_desk_1280) {
             font-size: 2.2rem;
+        }
+        @media (max-width: $r_mob_360) {
+            font-size: 1.5rem;                    
         }
     }
 }
@@ -612,6 +654,10 @@ body {
     cursor: pointer;
     @media (max-width: $r_desk_1280) {
         font-size: 1.4rem;
+    }
+    @media (max-width: $r_mob_360) {
+        padding: 2.2rem 3.4rem;
+
     }
     &_max {
         padding: 2.4rem 4.5rem;
@@ -632,7 +678,10 @@ body {
         }
         @media (max-width: $r_tab) {
             padding: 2.4rem 5.5rem;
-            font-size: 1.2rem;
+            font-size: 1.2rem;            
+        }
+        @media (max-width: $r_mob_500) {
+            padding: 1.8rem 5rem;
             
         }
     }
@@ -661,7 +710,15 @@ body {
         }
         @media(max-width: $r_tab) {
             font-size: 1.3rem;
-            padding: 2rem 2.4rem;
+            padding: 2.5rem calc(20px + 14 * ((100vw - 320px) / 768));
+        }
+
+        @media( max-width: $r_mob_650 ) {
+            padding: 2.5rem calc(22px + 100 * ((100vw - 320px) / 650));            
+        }
+        @media (max-width: $r_mob_360) {
+            padding: 1.7rem calc(22px + 100 * ((100vw - 320px) / 650));            
+
         }
 
     }
@@ -683,7 +740,13 @@ body {
     &__text {
         margin-top: 6.7rem;
         max-width: 700px;
+        @media (max-width: $r_mob_360) {
+            max-width: 260px;
+            margin: 0 auto;
+            margin-top: 3rem;
+         }
     }
+    
     .deskription {
         line-height: 3rem;
     }
@@ -698,6 +761,20 @@ body {
     }
     @media (max-width: $r_mob_500) {
         max-width: 210px;
+    }
+    @media (max-width: $r_mob_360) {
+        padding-top: 37px;
+        max-width: 289px;
+    }
+    &__catalog {
+        @media (max-width: $r_tab) {
+            max-width: 550px;
+            margin: 0 auto;
+        }
+        @media (max-width: $r_mob_360) {
+            padding-top: 24px;
+            padding-bottom: 20px;
+        }
     }
 }
 
@@ -791,8 +868,11 @@ body {
             margin-top:24px;
             margin-bottom: 0;
             @media (max-width: $r_mob_500) {
-                font-size: 1.75rem;
-                
+                font-size: 1.75rem;                
+            }
+            @media (max-width: $r_mob_500) {
+                margin-top: 9px;
+                                  
             }
             &_size-m {
                 @media (max-width: $r_desk_1280) {
@@ -810,6 +890,11 @@ body {
                 @media (max-width: $r_tab) {
                     font-size: 3rem;
                 }
+                @media (max-width: $r_mob_500) {
+                    font-size: 1.8rem;                    
+                }
+               
+        
             }
         }
         &__hover {
@@ -900,9 +985,17 @@ body {
             @media (max-width: $r_desk) {
                 font-size: 1.8rem;
             }
+            @media (max-width: $r_mob_500) {
+                font-size: 1.6rem;
+                margin-top: 1rem;
+
+            }
         }
         &__price {
             font-size: 2.4rem;
+            @media (max-width: $r_mob_500) {
+                font-size: 1.6rem;                    
+            }
         }
         &__footer {
             display: flex;
@@ -916,7 +1009,39 @@ body {
             @media (max-width: $r_desk_hd) {
                 flex-direction: row;
             }
+            @media (max-width: $r_mob_500) {
+                font-size: 1.6rem;
+                margin-top:0;
+
+            }
             
+        }
+        &__button {
+            width: 100%;
+            max-width: 230px;
+            background-color: transparent;
+            padding: 2.4rem 0;
+            border: none;
+            border: 1px solid rgba($green, .5) !important;
+            color: rgba($green, .5);
+            font-size: 1.8rem;
+            text-decoration: none;
+            border-radius: 4rem;
+            display: block;
+            transition: all .3s ease;
+            cursor: pointer;
+            @media (max-width: $r_mob_360) {
+                width: 100%;
+                width: 110px !important;
+                padding: 1.8rem 0;
+                font-size: 1.2rem;
+
+            }
+            &:hover {
+                border: 1px solid $orange !important;
+                color: $orange;
+                box-shadow: initial;
+            }
         }
 
     }
@@ -933,6 +1058,13 @@ body {
             flex-direction: column;
             align-items: center;
             text-align: center;
+        }
+        @media (max-width: $r_mob_500) {
+            height: 303px;
+            padding: 3rem 2rem 3rem;
+        }
+        @media (max-width: $r_mob_360) {
+            width: 210px;
         }
 
     }
@@ -960,6 +1092,8 @@ body {
         left: initial;
         right: 72px; 
     }
+
+   
    
 } 
 .swiper-horizontal>.swiper-pagination-bullets {
@@ -986,6 +1120,12 @@ body {
     @media (max-width: $r_tab_900) {
         padding-bottom: 9.8rem;
     }
+    @media (max-width: $r_mob_360) {
+        padding-top: 0;
+        line-height: 1.1;
+        padding-bottom: 6.4rem;
+
+    }
     // @media (max-width: $r_tab) {
     //     padding-bottom: 12rem;
 
@@ -1002,7 +1142,9 @@ body {
         @media (max-width: $r_tab) {
             flex-direction: column;
         }
-        
+        @media (max-width: $r_mob_360) {
+            margin-top: 1rem;
+        }
     }
     // .about__text
     &__text {
@@ -1013,15 +1155,16 @@ body {
         }
         @media (max-width: $r_desk_hd) {
             flex-basis: 430px;
-
         }
        
         @media (max-width: $r_desk_1120) {
             margin-left: 4rem;
         }
         @media (max-width: $r_tab) {
-            flex-basis: 125px;
-            
+            flex-basis: 133px;            
+        }
+        @media (max-width: $r_mob_360) {
+            margin-left: 0;
         }
         
     }
@@ -1040,25 +1183,39 @@ body {
         }
         @media (max-width: $r_tab_900) {
             gap: 3rem;
+        }
+        @media (max-width: $r_mob_360){
+            gap: 4rem;
 
         }
     }
     // .about__item
     &__item {
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       &::before {
-           content: '';
-           width: 84px;
-           height: 84px;
-           background-position: center center;
-           background-repeat: no-repeat;
-           border: 1px solid rgba($green, .4);
-           border-radius: 100%;
-           margin-bottom: 1.5rem;
-       }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &::before {
+            content: '';
+            width: 84px;
+            height: 84px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border: 1px solid rgba($green, .4);
+            border-radius: 100%;
+            margin-bottom: 1.5rem;
+            @media (max-width: $r_mob_500) {
+                width: 62px;
+                height: 62px;
+
+            }
+        }
+        @media (max-width: $r_mob_500) {
+           font-size: 20px;
+        }
+        @media (max-width: $r_mob_360) {
+            font-size: 14px;
+        }
        &:nth-child(1) {
             &::before {
                 background-image: url(../images/fruits.svg);
@@ -1083,6 +1240,11 @@ body {
 .trends {
     &__text {
         padding-top: 60px;
+        @media (max-width: $r_mob_360) {
+            margin: 0 auto;
+            max-width: 209px;
+            padding-top: 14px;
+        }
     }
 }
 .catalog {
@@ -1092,6 +1254,9 @@ body {
     }
     @media (max-width: $r_tab) {
         padding-top: 9.3rem;
+    }
+    @media (max-width: $r_mob_360) {
+        padding-top: 5.8rem;
     }
     &__text {
         margin-top: 4rem;
@@ -1120,7 +1285,10 @@ body {
         opacity: .8;
         text-transform: uppercase;
         transition: all .3s ease;
+        @media (max-width: $r_mob_360) {
+            margin-top: 40px;
 
+        }
        
         &::before {
             content: '';
@@ -1136,12 +1304,14 @@ body {
         }
     }
 }
+.catalogSwiper {
 
+}
 .category {
     list-style-type: none;
     padding-left: 0;
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     align-items: center;
     gap: 2rem;
     &__item {
@@ -1149,21 +1319,23 @@ body {
         text-align: center;
     }
     &__link {
-        width: 100%;
-        background-color: transparent;
-        padding: 2.4rem 0;
-        border: 1px solid rgba($green, .5);
-        color: rgba($green, .5);
-        font-size: 1.8rem;
-        text-decoration: none;
-        border-radius: 4rem;
-        display: block;
-        transition: all .3s ease;
-        cursor: pointer;
-        &:hover {
-            border: 1px solid $orange;
-            color: $orange;
-        }
+        // width: 100%;
+        // max-width: 230px;
+        // background-color: transparent;
+        // padding: 2.4rem 0;
+        
+        // border: 1px solid rgba($green, .5);
+        // color: rgba($green, .5);
+        // font-size: 1.8rem;
+        // text-decoration: none;
+        // border-radius: 4rem;
+        // display: block;
+        // transition: all .3s ease;
+        // cursor: pointer;
+        // &:hover {
+        //     border: 1px solid $orange;
+        //     color: $orange;
+        // }
     }
 }
 .anime {
@@ -1209,6 +1381,10 @@ body {
         grid-template-columns: repeat(2, 1fr);
 
     }
+    @media (max-width: $r_mob_400) {
+        gap: 13px;
+        
+    }
 
     &__item {
         border: 1px solid rgba($green, .4);
@@ -1227,7 +1403,11 @@ body {
         }
         @media (max-width: $r_mob_500) {
             padding: 2rem 1.5rem 2rem;
-
+        }
+        @media (max-width: $r_mob_400) {
+            padding: 2rem 1rem 2rem;
+           
+            
         }
         &:hover {
             box-shadow: 0 0 0 2px rgba($green, .4) inset;
@@ -1253,8 +1433,18 @@ body {
         height: 204px;
         text-align: center;
         @media (max-width: $r_mob_500) {
-            height: 150px;
+            height: 140px;
+            width: 82%;
         }
+        @media (max-width: $r_mob_400) {
+            height: 110px;
+            width: 72%;
+        }
+        @media (max-width: $r_mob_360) {
+            height: 54px;
+
+        }
+
 
     }
     &__image {
@@ -1271,15 +1461,9 @@ body {
         margin-bottom: 0;
         @media (max-width: $r_desk_1450) {
             font-size: 2.5rem;
-
-    
-            }
-        // @media (max-width: $r_desk_1120) {
-        //     font-size: 2.7rem;
-        // }
+        }
         @media(max-width: $r_desk) {
-            font-size: 2.4rem;
-
+            font-size: calc(14px + 17 * ((100vw - 320px) / 768));;
         }
     }
     &__deskription {
@@ -1292,8 +1476,14 @@ body {
         line-height: 1.5;
         @media (max-width: $r_mob_650) {
             min-height: 77px;
-            font-size: 1.3rem;
-            
+            font-size: 1.3rem;            
+        }
+        @media (max-width: $r_mob_500) {
+            min-height: 50px;
+        }
+        @media (max-width: $r_mob_360) {
+            margin-top: 0.8rem;
+
         }
     }
     &__price {
@@ -1302,6 +1492,11 @@ body {
         margin-top: 0;
         @media (max-width: $r_mob_650) {   
             font-size: 2rem;  
+        }
+        @media (max-width: $r_mob_360) {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+
         }
     }
     &__footer {
@@ -1320,6 +1515,11 @@ body {
         text-align: center;
         padding-top: 8rem;
     }
+    @media (max-width: $r_mob_360) {
+        padding-top: 7rem;
+        
+
+    }
     // .delivery__box
     &__box {
         display: flex;
@@ -1329,6 +1529,7 @@ body {
         margin: 5.6rem 0 0 11.2rem;
         line-height: 1.5;
         gap: 12%;
+        
         @media (max-width: $r_desk_hd) {
             margin: 5.6rem 0 0 8rem;
 
@@ -1337,7 +1538,13 @@ body {
            flex-direction: column;
            margin: 0 auto;
         }
+        @media (max-width: $r_mob_360) {
+            font-size: 12px;
+            line-height: 1.7;
+            margin-top: 20px;
+         }
     }
+   
     // .delivery__text
     &__text {
         flex-basis: 44%;
@@ -1365,6 +1572,7 @@ body {
             color: $orange;
         }
     }
+    
     &__description-orange {
         
             color: $orange;
@@ -1385,6 +1593,11 @@ body {
         @media (max-width: $r_tab) {
             justify-content: center;
         }
+        @media (max-width: $r_mob_360) {
+            gap: 2rem;
+            margin-top: 3rem;
+
+        }
     }
     // .delivery__item
     &__item {
@@ -1402,14 +1615,23 @@ body {
         &_master {
             background-image: url(../images/mastercard.svg);
             width: 56px;
+            @media (max-width: $r_mob_360) {
+                width: 39px;
+            }
         }
         &_visa {
             background-image: url(../images/visa.svg);
             width: 65px;
+            @media (max-width: $r_mob_360) {
+                width: 57px;
+            }
         }
         &_paypal {
             background-image: url(../images/paypal.svg);
             width: 89px;
+            @media (max-width: $r_mob_360) {
+                width: 68px;
+            }
         }
 
     }
@@ -1429,11 +1651,14 @@ body {
             flex-direction: column;
             gap: 6rem;
             padding: 5.9rem 0 0.2rem 0;
+        }
+        @media (max-width: $r_mob_360) {
+            padding: 3.5rem 0 0.2rem 0;
 
         }
         // .contact-box__item
         &__item {
-            padding-top: 30px;
+            padding-top: 0;
         
         }
         // .contact-box__text
@@ -1451,18 +1676,30 @@ body {
             @media (max-width: $r_tab) {
                max-width: 100%;
                padding-left: 0;
-               text-align: center;
+               text-align: center;                
+            }
+            @media (max-width: $r_mob_360)  {
+                padding-top: 12px;
                 
+
             }
         }
         &__deskription {
             font-size: 1.8rem;
             line-height: 1.5;
             margin-top: 10px;
+            @media (max-width: $r_mob_360)  {               
+                font-size: 12px;
+                margin-top: 20px;
+
+            }
         }
         // .contact-box__form
         &__form {
             flex-basis: 592px;
+            @media (max-width: $r_mob_360) {
+                flex-basis: 418px;
+            }
         }
         &__list {
             padding-left: 0;
@@ -1470,6 +1707,9 @@ body {
                display: flex;
                justify-content: space-between;
                 
+            }
+            @media (max-width: $r_mob_360) {
+                margin-top: 0;
             }
         }
         &__item {
@@ -1487,6 +1727,14 @@ body {
                 font-size: 2rem;
                 gap: 2rem;
             }
+            @media (max-width: $r_mob_500) {
+                font-size: 1.5rem;
+                gap: 1.5rem;
+            }
+            @media (max-width: $r_mob_360) {
+                gap: 0.5rem;
+            }                
+
             &::before {
                 content: '';
                 background-repeat: no-repeat;
@@ -1501,6 +1749,15 @@ body {
             &::before { 
                 background-image: url(../images/phone.svg);
                 background-size: 29px 30px;
+
+                @media (max-width: $r_mob_500) {
+                    background-size: 20px 21px;                
+                }
+                @media (max-width: $r_mob_360)  {               
+                    background-size: 17px 19px;                
+
+    
+                }
             }
             transition: all .3s ease;
             &:hover {
@@ -1511,6 +1768,10 @@ body {
             &::before { 
                 background-image: url(../images/mail.svg);
                 background-size: 29px 30px;
+                @media (max-width: $r_mob_500) {
+                    background-size: 20px 21px;
+                    
+                }
             }
             transition: all .3s ease;
             &:hover {
@@ -1527,7 +1788,10 @@ body {
     border: 2px solid rgba($green, .4);
     padding: 3.7rem 5.5rem 4rem;
     border-radius: 2rem;
+    @media (max-width: $r_mob_360) {
+    padding: 1.8rem 1.8rem 4rem;
 
+    }
 	// .card__title
 	&__title {
         font-size: 30px;
@@ -1535,6 +1799,11 @@ body {
         @media (max-width: $r_tab) {
            max-width: 216px;
             margin: auto;
+         }
+         @media (max-width: $r_mob_360) {
+             font-size: 22px;
+             max-width: 157px;
+             margin-bottom: 20px;
          }
     }
 	// .card__label
@@ -1552,7 +1821,11 @@ body {
         margin-bottom: 2.8rem;
         width: 100%;
         box-sizing: border-box;
-        border-radius: 2rem;
+        border-radius: 4rem;
+        @media (max-width: $r_mob_360) {
+            padding: 2rem 3rem;
+            margin-bottom: 1rem;
+        }
         &:focus {
         border: 1px solid rgba($green, 1);
         outline: none;
@@ -1575,6 +1848,9 @@ body {
            display: block;
            margin: auto;
         }
+        @media (max-width: $r_mob_360) {
+            margin-top: 24px;
+        }
     }
     &__docs {
         color: rgba($green, .6);
@@ -1588,6 +1864,10 @@ body {
 .site-footer {
     border-top: 1px solid #d4d6cf;
     padding-top: 86px;
+    @media (max-width: $r_mob_360) {
+        padding-top: 31px;
+
+    }
     &__logo {
         width: 18rem;
         height: 4.8rem;
@@ -1608,6 +1888,9 @@ body {
                 flex-wrap: wrap;
                 flex-direction: column;
              }
+             @media (max-width: $r_mob_360) {
+                 padding-bottom: 0;
+             }
         }
         &__info {
             display: flex;
@@ -1622,6 +1905,10 @@ body {
                 align-items: center;
                 text-align: center;
             }
+            @media (max-width: $r_mob_360) {
+                gap: 0;
+
+            }
         }
 		// .footer__list
 		&__list {
@@ -1629,6 +1916,11 @@ body {
             padding-left: 0;
             list-style-type: none;
             font-size: 1.8rem;
+            @media (max-width: $r_mob_360) {
+                font-size: 1.5rem;
+
+            }
+
         }
         &__list-nav {
             @media (max-width: $r_mob_550) {
@@ -1636,6 +1928,11 @@ body {
                 max-width: 320px;
                 width: 100%;
                 justify-content: space-between;
+                @media (max-width: $r_mob_360) {
+                    max-width: 243px;
+
+        
+                    }
             }
         }
 		// .footer__item
@@ -1643,6 +1940,10 @@ body {
             margin-bottom: 2rem;
             transition: all .3s ease;
             cursor: pointer;
+            @media (max-width: $r_mob_360) {
+            // margin-bottom: 1.5rem;
+
+            }
             &:hover {
                 color: $orange;
             }
@@ -1670,6 +1971,9 @@ body {
                 align-items: center;
                 text-align: center;
             }
+            @media (max-width: $r_mob_360) {
+                margin-top: 20px;
+            }
         }
         &__contact-box {
             display: flex;
@@ -1683,8 +1987,11 @@ body {
             color: $green;
             transition: all .3s ease;
             @media (max-width: $r_desk) {
-                font-size: 2.4rem;
-                
+                font-size: 2.4rem;                
+            }
+            @media (max-width: $r_mob_360) {
+                font-size: 3.7rem;                
+
             }
             &:hover {
                 color: $orange;
@@ -1710,6 +2017,9 @@ body {
             @media (max-width: $r_tab) {
                flex-direction: column;
                text-align: center;
+            }
+            @media (max-width: $r_mob_360) {
+                font-size: 10px;
             }
           
          
@@ -1746,6 +2056,11 @@ body {
         max-width: 250px;
         width: 100%;
        
+    }
+    @media (max-width: $r_mob_360) {
+        max-width: 213px;
+        margin-top: 1.8rem;
+
     }
 		// .footer-social__item
 		&__item {

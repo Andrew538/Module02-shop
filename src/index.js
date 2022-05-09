@@ -13,8 +13,8 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 
 
   var swiper = new Swiper(".offerSwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 2,
+    spaceBetween: 17,
     slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,
@@ -30,7 +30,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
     breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 1,
+        slidesPerView: 1.35,
         slidesPerGroup: 1
       },
       769: {
@@ -47,7 +47,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 
   var swiper = new Swiper(".trendsSwiper", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 20,
     slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,
@@ -63,7 +63,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
     breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 1,
+        slidesPerView: 1.35,
         slidesPerGroup: 1
       },
       769: {
@@ -74,6 +74,52 @@ import Swiper, { Navigation, Pagination } from 'swiper';
         slidesPerView: 3,
         slidesPerGroup: 3
       }
+     
+
+    }
+    
+  });
+
+  var swiper = new Swiper(".catalogSwiper", {
+    
+    slidesPerView: 2,
+    spaceBetween: 15,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    modules: [Navigation, Pagination],
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 3,
+        slidesPerGroup: 1
+      },
+      360: {
+        slidesPerView: 2.5,
+        slidesPerGroup: 2.5
+      },
+      769: {
+        slidesPerView: 3,
+        slidesPerGroup: 3
+      },
+      1001: {
+        slidesPerView: 5,
+        slidesPerGroup: 5
+      },
+      1380: {
+        slidesPerView: 6,
+        slidesPerGroup: 6
+      }
+
+      
      
 
     }
@@ -127,6 +173,11 @@ import Swiper, { Navigation, Pagination } from 'swiper';
     for (let i=8;i<item.length;i++) {
         item[i].style.display = "none";
     }
+    if (document.body.clientWidth  <= 320) {
+      for (let i=4;i<item.length;i++) {
+        item[i].style.display = "none";
+      }
+    }
   
     let countD = 8;
     btn.addEventListener('click', function() {
@@ -134,11 +185,11 @@ import Swiper, { Navigation, Pagination } from 'swiper';
         countD += 4;
         if (countD <= item.length){
             for(let i=0;i<countD;i++){
-                item[i].style.display = "block";
-            }
+              item[i].style.display = "block";                
+          }
         }
-  
     })
+    
   }
 
 
